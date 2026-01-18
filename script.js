@@ -193,7 +193,7 @@ function load_course(course_name) {
     const external_box = document.createElement('div');
     external_box.className = 'extrenal_box';
     const ext_link = document.createElement('p');
-    ext_link.textContent = `Do you want an external resourse to learn ${course_name.toUpperCase()} ? `
+    ext_link.textContent = `Do you want an external resource to learn ${course_name.toUpperCase()} ? `
     const ex_btn = document.createElement('button');
     ex_btn.className = 'ex_btn';
     ex_btn.textContent = "Yes";
@@ -286,8 +286,8 @@ about_developer.addEventListener('click', (e) => {
     about_section.append(goback, developer, about_typewritter);
     const about_object = [
         "Name: TALARI JAGAN MOHAN",
-        "Phone: (REVEALED SOON!)",
-        "G-Mail: (REVEALED SOON!)"
+        "Phone: (Revealed Soon!)",
+        "G-Mail: (Revealed Soon!)"
     ];
 
     typewritter(about_typewritter, about_object);
@@ -313,8 +313,8 @@ about_in_m.addEventListener('click', (e) => {
     about_section.append(goback, developer, about_typewritter);
     const about_object = [
         "Name: TALARI JAGAN MOHAN",
-        "Phone: (REVEALED SOON!)",
-        "G-Mail: (REVEALED SOON!)"
+        "Phone: (Revealed Soon!)",
+        "G-Mail: (Revealed Soon!)"
     ];
 
     typewritter(about_typewritter, about_object);
@@ -357,6 +357,7 @@ function home_go(main_window, button) {
 
     });
 }
+
 
 
 
