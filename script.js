@@ -346,9 +346,12 @@ contact_dev_link(mail1, "mailto:jai.8.joy@gmail.com");
 function home_go(main_window, button) {
     button.addEventListener('click', (e) => {
         main_window.style.display = 'none';
+        main_window.innerHtml='';
         show_container1.style.display = 'block';
+        
     });
 }
+
 
 
 
