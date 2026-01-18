@@ -73,13 +73,14 @@
         height: 30px;
         width: 30px;
         background-color: white;
+        border:none;
     }
 
     .navbar .navoptions {
         display: none;
         width: max-content;
         padding: 5px;
-        background-color: rgb(221, 246, 96) ;
+        background-color: rgb(221, 246, 96);
         height: max-content;
     }
 
@@ -97,7 +98,7 @@
         display: none;
         flex-direction: column;
         padding: 3px;
-        height: max-content;
+        height: 100%;
         transition-duration: 0.5s;
         background-color: cadetblue;
     }
@@ -824,6 +825,7 @@
 
 
 }
+
 
 
 
