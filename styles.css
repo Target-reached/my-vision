@@ -1,0 +1,827 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@media screen and (min-width:300px) and (max-width:426px) {
+
+    .universal_box {
+        border: 1px solid;
+        min-height: 100vh;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        /* background-image: url("");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; */
+    }
+
+    .about_developer {
+        display: none;
+    }
+
+    .container1 {
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        background-color: rgb(188, 210, 252);
+    }
+
+    .logo_pc {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navbar .logo {
+        height: 70px;
+        width: 70px;
+        border: none;
+        align-self: center;
+        background-image: url("MY_VISION.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .navbar .view_options {
+        position: absolute;
+        top: 0px;
+        height: 30px;
+        width: 30px;
+        background-color: rgb(4, 4, 4);
+    }
+
+    .view_options img {
+        height: 30px;
+        width: 30px;
+        border: none;
+    }
+
+    .view_options button {
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border: 0px;
+    }
+
+    .navbar .navoptions {
+        display: none;
+        width: max-content;
+        padding: 5px;
+        background-color: blueviolet;
+        height: max-content;
+    }
+
+    .mainoptions li {
+        margin-bottom: 5px;
+
+    }
+
+    .mainoptions>li:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .helpDesk {
+        display: none;
+        flex-direction: column;
+        padding: 3px;
+        height: max-content;
+        transition-duration: 0.5s;
+        background-color: cadetblue;
+    }
+
+    .helpdesk {
+
+        width: 100%;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .imgpreview {
+        padding: 5px;
+        width: 100%;
+        height: 80vh;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .image {
+        height: 100%;
+        width: 90%;
+        top: 20px;
+        border-radius: 10px;
+        border: 3px solid black;
+    }
+
+    .typer {
+        border-radius: 8px;
+        padding: 5px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 30px;
+        animation: frames_ 0.5s 30 ease-in-out;
+    }
+
+    .goBack {
+        position: fixed;
+        top: 28px;
+        width: 65px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        background: radial-gradient(rgb(240, 2, 2), rgb(0, 0, 0));
+        color: white;
+        opacity: 0.6;
+        align-self: center;
+    }
+
+    .home {
+        width: 50%;
+        align-self: center;
+        height: 25px;
+        background-color: rgb(16, 29, 33);
+        border: none;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-style: italic;
+        color: rgb(163, 171, 164);
+    }
+
+    #welcome-line {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 1.5rem;
+    }
+
+    .fe_line,
+    .be_line,
+    .prg_crs {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0.5px 1px 5px black;
+    }
+
+    .frontend-courses,
+    .backend-courses {
+        padding: 5px 3px;
+        height: max-content;
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background: radial-gradient(rgba(8, 60, 67, 0.918), rgb(3, 3, 3));
+        animation: frames_ 1s 2 ease-in-out;
+        margin: 0px auto;
+    }
+
+    .frontend-courses>img,
+    .backend-courses>img,
+    .prgrm_src>img {
+        height: 80%;
+        width: 80%;
+        border: none;
+        margin: auto;
+        transition-duration: 1s;
+    }
+
+
+    .frontend-courses>img:hover,
+    .backend-courses>img:hover,
+    .prgrm_src>img:hover {
+        border: 2px solid white;
+    }
+
+
+    .prgrm_src {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 2px 2px;
+        width: 98%;
+        border-radius: 10px;
+        background: linear-gradient(rgb(81, 69, 69), rgb(38, 28, 28));
+        transition-duration: 1s;
+        animation: frames_ 1s 2 2s ease-in-out;
+        margin: 0px auto;
+    }
+
+    .user-guide {
+        padding: 5px;
+        font-size: 1.1em;
+        font-family: monospace;
+        margin-bottom: 10px;
+        width: 98%;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .user-guide>h2::before {
+        content: "✨";
+    }
+
+    .mobile_ {
+        height: max-content;
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: 0.9rem;
+        letter-spacing: 1.6px;
+    }
+
+    .pc_ {
+        display: none;
+    }
+
+
+    .contact_box {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5px;
+        background: linear-gradient(120deg, rgb(58, 186, 4), rgb(138, 165, 254), rgb(223, 231, 83));
+        box-shadow: 3px 2px 15px;
+        width: 95%;
+
+    }
+
+    .query_qsn {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 0px 3px rgb(255, 255, 255);
+
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px;
+    }
+
+    .contact img {
+        height: 90px;
+        width: 85px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .exit_helpdesk {
+        height: 30px;
+        width: 50%;
+        margin: auto;
+        border: none;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 1px 2px 8px;
+        color: white;
+
+    }
+
+    .contact_designer1 {
+        min-height: 100vh;
+        display: none;
+        flex-direction: column;
+    }
+
+    /* user course desk */
+
+    .course-desk {
+        display: none;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+        padding: 3px;
+        background: radial-gradient(rgba(251, 159, 159, 0.918), rgb(233, 214, 214));
+    }
+
+
+    .course-wish {
+        text-align: center;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+
+    .videoDiv {
+        margin-top: 10px;
+        height: 200px;
+        padding: 0px;
+        border: 2px solid;
+        border-radius: 5px;
+
+    }
+
+    .iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        align-self: center;
+        border-radius: 5px;
+    }
+
+    .extrenal_box {
+        height: max-content;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        font-size: 18px;
+        font-style: italic;
+        animation: ext_box 0.8s 2;
+        padding: 3px;
+    }
+
+    .ex_btn {
+        height: 25px;
+        width: 50%;
+        align-self: center;
+        background: linear-gradient(120deg, rgb(249, 142, 59), white);
+        border-radius: 10px;
+        font-size: 16px;
+        font-style: italic;
+
+    }
+
+    .about_designer {
+        display: none;
+        flex-direction: column;
+        padding: 5px;
+        min-height: 100vh;
+        width: 100%;
+        background-color: rgb(45, 47, 73);
+    }
+
+    .exit_about {
+        height: 30px;
+        width: 20%;
+        position: sticky;
+        top: 15px;
+        transition-duration: 0.5s;
+        background-color: rgb(6, 7, 7);
+        border: none;
+        font-size: 0.9rem;
+        border-bottom-left-radius: 90%;
+        border-top-left-radius: 90%;
+        color: white;
+    }
+
+    /* About developer css */
+
+    .developer_image {
+        background-image: url("/MY_VISION.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150px;
+        width: 160px;
+        align-self: center;
+        margin-top: 20px;
+        border: none;
+        border-radius: 50%;
+        margin-bottom: 100px;
+        box-shadow: 0px 0px 10px black;
+
+    }
+
+    .about_typewritter {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(121, 117, 117);
+        font-style: italic;
+        font-weight: bold;
+        line-height: 50px;
+        padding: 10px;
+        height: 200px;
+        width: 98%;
+        align-self: center;
+        border: 1px solid;
+        font-size: 1.2rem;
+        border: none;
+        box-shadow: 0px 0px 20px;
+        transition-duration: 0.5s;
+        text-shadow: 0px 0.1px 0.2px white;
+        background: radial-gradient(rgba(8, 60, 67, 0.918), rgb(3, 3, 3));
+    }
+
+
+    /*animations*/
+    @keyframes ext_box {
+        from {
+            box-shadow: 0px 0px 10px black;
+        }
+
+        to {
+            box-shadow: 0px 0px 5px white;
+        }
+    }
+
+
+    @keyframes frames_ {
+        from {
+            box-shadow: 0px 0px 10px rgb(222, 3, 3);
+        }
+
+        to {
+            box-shadow: 0px 0px 5px rgb(3, 8, 3);
+        }
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:2560px) {
+
+    .universal_box {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        background-color: blueviolet;
+
+    }
+
+    .container1 {
+        border: 1px solid;
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+        background-image: url("/webpage_walp.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+    }
+
+    .about_developer {
+        position: sticky;
+        top: 2%;
+        width: 20%;
+        height: 30px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        font-size: 0.9em;
+        transition-duration: 0.5s;
+        background-color: rgb(42, 252, 252);
+        opacity: 0.5;
+        border: none;
+
+    }
+
+    .about_developer:hover {
+        background: linear-gradient(160deg, rgb(105, 93, 93), rgb(70, 55, 55), black, black);
+        color: aqua;
+        cursor: pointer;
+    }
+
+    #welcome-line {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+        color: rgb(189, 186, 186);
+    }
+
+    .logo_pc {
+        height: 130px;
+        width: 130px;
+        margin: 0px auto;
+        background-image: url("/MY_VISION.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        transition-duration: 0.5s;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .fe_line,
+    .be_line,
+    .prg_crs {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1.4em;
+        background: linear-gradient(120deg, rgb(94, 88, 88), rgb(0, 0, 0), black, rgb(94, 88, 88));
+        box-shadow: 0px 0px 5px rgb(170, 151, 151);
+        color: rgb(238, 12, 12);
+    }
+
+    .frontend-courses,
+    .backend-courses {
+        margin: 0px auto;
+        padding: 5px 3px;
+        height: max-content;
+        width: fit-content;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid;
+        background: radial-gradient(rgba(8, 60, 67, 0.918), rgb(3, 3, 3));
+    }
+
+    .frontend-courses img,
+    .backend-courses img {
+        margin: auto;
+        height: 80%;
+        width: 50%;
+        transition-duration: 0.3s;
+        border-radius: 5px;
+    }
+
+    .frontend-courses img:hover,
+    .backend-courses img:hover {
+        box-shadow: 0px 0px 10px rgb(16, 239, 4);
+        cursor: pointer;
+    }
+
+    .prg_crs {
+        text-align: center;
+        font-size: 1.4em;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 5px rgb(170, 151, 151);
+        color: red;
+        background: linear-gradient(120deg, rgb(94, 88, 88), rgb(0, 0, 0), black, rgb(94, 88, 88));
+
+    }
+
+    .prgrm_src {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30px;
+        padding: 10px;
+        width: max-content;
+        border-radius: 10px;
+        border: 1px solid;
+        margin: 0px auto;
+        background: radial-gradient(rgba(0, 0, 0, 0.918), rgb(4, 118, 167));
+
+    }
+
+    .prgrm_src img {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        transition-duration: 0.3s;
+
+    }
+
+    .prgrm_src img:hover {
+        box-shadow: 0px 0px 10px rgb(243, 3, 3);
+        cursor: pointer;
+    }
+
+    .user-guide {
+        padding: 5px;
+        font-size: 1.3em;
+        font-family: monospace;
+        margin-bottom: 10px;
+        width: 98%;
+        font-style: italic;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0px 3px 5px rgb(1, 119, 24);
+    }
+
+    .user-guide>h2::before {
+        content: "✨";
+    }
+
+    /* User desk */
+
+    .course-desk {
+        display: none;
+        min-height: 100vh;
+        flex-direction: column;
+        padding: 10px;
+        background-color: rgb(184, 151, 251);
+
+    }
+
+    .helpDesk {
+        display: none;
+    }
+
+    .home {
+        width: 30%;
+        align-self: center;
+        height: 25px;
+        background-color: rgb(16, 29, 33);
+        border: none;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        font-style: italic;
+        color: rgb(163, 171, 164);
+        cursor: pointer;
+    }
+
+    .course-wish {
+
+        text-align: center;
+        color: black;
+        font-size: 1.6rem;
+        font-weight: bold;
+
+    }
+
+    .videoDiv {
+        margin-top: 10px;
+        height: 500px;
+        padding: 0px;
+        border: 2px solid;
+        border-radius: 5px;
+        width: 90%;
+        margin: 0px auto;
+
+    }
+
+    .iframe {
+        margin: 0px auto;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+
+
+    }
+
+    .extrenal_box {
+        height: max-content;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        font-size: 1.3rem;
+        padding: 3px;
+    }
+
+    .extrenal_box p {
+        background-color: black;
+        color: white;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .ex_btn {
+        height: 25px;
+        width: 50%;
+        align-self: center;
+        background: linear-gradient(120deg, rgb(94, 88, 88), rgb(0, 0, 0), black, rgb(94, 88, 88));
+        border-radius: 10px;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+
+    }
+
+    .mobile_ {
+        display: none;
+    }
+
+    .pc_ {
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: 0.9rem;
+        font-family: agency fb;
+        letter-spacing: 1.1px;
+        padding: 10px;
+    }
+
+    .about_designer {
+        display: none;
+        flex-direction: column;
+        padding: 5px;
+        min-height: 100vh;
+        width: 100%;
+        background-image: url("/aboutpage_walpaper.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .exit_about {
+        height: 30px;
+        width: 20%;
+        position: sticky;
+        top: 15px;
+        transition-duration: 0.5s;
+        background-color: rgb(152, 159, 165);
+        border: none;
+        font-size: 0.9rem;
+    }
+
+    .exit_about:hover {
+        border-bottom-left-radius: 90%;
+        border-top-left-radius: 90%;
+        background-color: rgb(0, 0, 0);
+        color: white
+    }
+
+    .developer_image {
+        display: none;
+    }
+
+    .about_typewritter {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: black;
+        color: rgb(121, 117, 117);
+        font-style: italic;
+        line-height: 40px;
+        padding: 10px;
+        height: 200px;
+        width: 60%;
+        align-self: center;
+        border: 1px solid;
+        font-size: 1.6rem;
+        border: none;
+        box-shadow: 2px 1px 8px white;
+        animation: frames_ 1s 1;
+        transition-duration: 1s;
+        text-shadow: 1px 2px 5px red;
+    }
+
+    .contact_designer1 {
+        display: none;
+    }
+
+    .contact_2 {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .contact_2 img {
+        height: 30px;
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .contact_2 img {
+        cursor: pointer;
+    }
+
+    @keyframes frames_ {
+        from {
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+        }
+
+        to {
+            box-shadow: 0px 0px 5px rgb(173, 1, 1);
+        }
+    }
+
+
+
+}
