@@ -286,8 +286,8 @@ about_developer.addEventListener('click', (e) => {
     about_section.append(goback, developer, about_typewritter);
     const about_object = [
         "Name: TALARI JAGAN MOHAN",
-        "Phone: 9629342968",
-        "G-Mail: jai.8.joy@gmail.com"
+        "Phone: (REVEALED SOON!)",
+        "G-Mail: (REVEALED SOON!)"
     ];
 
     typewritter(about_typewritter, about_object);
@@ -349,5 +349,6 @@ function home_go(main_window, button) {
         show_container1.style.display = 'block';
     });
 }
+
 
 
