@@ -243,7 +243,7 @@ help_button.addEventListener('click', (e) => {
     img_box.className = 'imgpreview';
     const webimg = document.createElement('img');
     webimg.className = 'image';
-    webimg.src = "/priview_page1.png";
+    webimg.src = "priview_page1.png";
     img_box.append(webimg);
     get_helpdesk.append(img_box);
     const direction_lines = {
@@ -349,4 +349,5 @@ function home_go(main_window, button) {
         show_container1.style.display = 'block';
     });
 }
+
 
