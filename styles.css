@@ -56,8 +56,8 @@
     }
 
     .navbar .view_options {
-        position: absolute;
-        top: 0px;
+        position: fixed;
+        top: 3px;
         height: 30px;
         width: 30px;
         background-color: rgb(4, 4, 4);
@@ -825,6 +825,7 @@
 
 
 }
+
 
 
 
